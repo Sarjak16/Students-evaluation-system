@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Evaluation</title>
+    <script>
+        document.getElementById('evaluation-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  var studentName = document.getElementById('student-name').value;
+  var projectName = document.getElementById('project-name').value;
+  var criteria1 = document.querySelector('input[name="criteria-1"]:checked').value;
+  var criteria2 = document.querySelector('input[name="criteria-2"]:checked').value;
+  var comments = document.getElementById('comments').value;
+  
+  // Send evaluation data to server here
+  
+  alert('Evaluation submitted for ' + studentName + ' and project ' + projectName);
+  });
+    </script>
+  </head>
+  <body>
+    <h1>Student Evaluation</h1>
+    <form id="evaluation-form">
+      <label for="student-name">Student Name:</label><br>
+      <input type="text" id="student-name" name="student-name"><br>
+      
+      <label for="project-name">Project Name:</label><br>
+      <input type="text" id="project-name" name="project-name"><br>
+      
+      <label for="criteria-1">Criteria 1:</label><br>
+      <input type="radio" id="criteria-1-excellent" name="criteria-1" value="excellent">
+      <label for="criteria-1-excellent">Excellent</label><br>
+      <input type="radio" id="criteria-1-good" name="criteria-1" value="good">
+      <label for="criteria-1-good">Good</label><br>
+      <input type="radio" id="criteria-1-fair" name="criteria-1" value="fair">
+      <label for="criteria-1-fair">Fair</label><br>
+      
+      <label for="criteria-2">Criteria 2:</label><br>
+      <input type="radio" id="criteria-2-excellent" name="criteria-2" value="excellent">
+      <label for="criteria-2-excellent">Excellent</label><br>
+      <input type="radio" id="criteria-2-good" name="criteria-2" value="good">
+      <label for="criteria-2-good">Good</label><br>
+      <input type="radio" id="criteria-2-fair" name="criteria-2" value="fair">
+      <label for="criteria-2-fair">Fair</label><br>
+      
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments"></textarea><br>
+      
+      <input type="submit" value="Submit Evaluation">
+    </form>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+    </style>
+  </body>
+</html>
