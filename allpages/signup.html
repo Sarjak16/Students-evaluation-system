@@ -1,0 +1,66 @@
+<!DOYPE html>
+<html>
+head>
+ <title>Sign</title>
+ <style>
+ body{
+   font-family:rial, sans-if;
+  : 0;
+   padding: ;
+   backgroundcolor: #f0f0f0;
+  }
+  .container{
+   width: 300px;
+   padding: 20px;
+   background-color: #fff;
+   margin: 50px auto;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  h1{
+   text-align: center;
+   margin-bottom: 20px;
+  }
+  .button-container{
+   text-align: center;
+   margin-top: 20px;
+  }
+  button{
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+  }
+  button:hover{
+   background-color: #0056b3;
+  }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h1>Sign Up</h1>
+ <form>
+ <label for="role">Role:</label><br>
+ <select id="role" name="role">
+ <option value="student">Student</option>
+ <option value="teacher">Teacher</option>
+ </select><br>
+ <label for="name">Name:</label><br>
+ <input type="text" id="name" name="name"><br>
+ <label for="email">Email:</label><br>
+ <input type="email" id="email" name="email"><br>
+ <label for="password">Password:</label><br>
+ <input type="password" id="password" name="password"><br>
+ <input type="submit" value="Sign Up">
+ </form>
+ </div>
+</body>
+</html>
