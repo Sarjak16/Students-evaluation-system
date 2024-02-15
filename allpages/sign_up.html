@@ -32,12 +32,15 @@ select {
     margin-bottom: 15px;
 }
 
-input[type="submit"] {
+button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
     color: white;
     border: none;
+}
+button:hover{
+  background-color: ;
 }
 
   </style>
@@ -54,7 +57,7 @@ input[type="submit"] {
             <option value="student">Student</option>
             <option value="teacher">Teacher</option>
         </select><br>
-        <input type="submit" value="Sign Up">
+        <button type="submit">Sign Up </button>
     </form>
     <script>
       const signupForm = document.getElementById("signup-form");
