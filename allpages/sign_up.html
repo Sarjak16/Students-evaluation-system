@@ -4,6 +4,43 @@
     <title>Sign Up</title>
 </head>
 <body>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+  </style>
     <h1>Sign Up</h1>
     <form id="signup-form">
         <label for="name">Name:</label><br>
@@ -19,6 +56,25 @@
         </select><br>
         <input type="submit" value="Sign Up">
     </form>
-    <script></script>
+    <script>
+      const signupForm = document.getElementById("signup-form");
+
+signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = signupForm["name"].value;
+    const email = signupForm["email"].value;
+    const password = signupForm["password"].value;
+    const role = signupForm["role"].value;
+
+    // Here you can add your own logic to sign up the user and redirect to index.html
+    // For example:
+    // 1. Send a request to your server to create a new user with the provided name, email, password and role
+    // 2. If the sign up is successful, redirect to index.html
+    // 3. If the sign up fails, show an error message
+
+    // For now, let's just redirect to index.html
+    window.location.href = "index.html";
+});
+    </script>
 </body>
 </html>
