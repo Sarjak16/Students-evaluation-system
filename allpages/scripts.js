@@ -3,4 +3,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const teacherLoginForm = document.getElementById('teacher-login-form');
 
 
-    // You can implement server-side
+    // You can implement server-side here
