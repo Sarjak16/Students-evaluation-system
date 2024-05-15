@@ -2,6 +2,12 @@
 $nameError = "";
 $passwordError ="";
 if (isset ($_POST['submit'])){
-    $username = 
+    $username = $_POST['email'];
+    $password = $_POST['password'];
+
+    if (empty($username)){
+
+    }
 }
+
 ?>
